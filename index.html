@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript.js"></script>
+</head>
+<body>
+   <div id="box">
+     Name:-<input id="name" type="text"><br><br>
+    Email:-<input id="email" type="email"><br><br>
+    Password:-<input id="pass" type="password"><br><br>
+    City:-<select onchange="Selectcity()" id="city">
+           <option >Select city</option>
+           <option value="Indore">Indore</option>
+           <option value="Bhopal">Bhopal</option>
+        </select>   <br><br>
+       Gender:-
+        <input  style="size: 2px;" type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Male">Male<br><br>
+       Hobby:-<input type="checkbox">Reading
+              <input type="checkbox">Writing
+    <button id="button" onclick="submit()">Submit</button><br><br>
+   </div>
+   <center>
+       <table id="table" border="1px">
+               <tr id="th">
+                      <th>NAME</th>
+                      <th>EMAIL</th>
+                      <th>PASSWORD</th>
+                      <th>City</th>
+                      <th>Gender</th>
+                      <th>Hobby</th>
+                      <th>EDIT</th>
+                      <th>DELETE</th>
+               </tr>
+               <div id="container"></div>
+       </table>
+   </center>
+   
+</body>
+</html>
